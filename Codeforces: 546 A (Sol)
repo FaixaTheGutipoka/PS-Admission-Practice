@@ -1,0 +1,2 @@
+k, n, w=input().split()
+print(int(((int(k)*int(w)*(int(w)+1))/2)-int(n)))
