@@ -1,0 +1,6 @@
+import itertools
+inputs = list(itertools.takewhile(lambda x: x != [0,0], map(lambda line: list(map(int, line.split())), iter(input, ''))))
+for x, y in inputs:
+    if x>y:
+        x,y=y,x
+    print(x, y)
