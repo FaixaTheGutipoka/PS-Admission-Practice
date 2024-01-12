@@ -1,0 +1,7 @@
+import itertools
+
+array = list(itertools.takewhile(lambda x: x != 0, map(int, iter(input, ''))))
+
+for i in range(len(array)):
+    b=str(i+1)
+    print("Case "+b+": "+str(array[i]))
